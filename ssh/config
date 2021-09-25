@@ -1,39 +1,3 @@
-Host forge350.cs.odu.edu
-  HostName forge350.cs.odu.edu
-  IdentityFile ~/.ssh/id_rsa.cs350
-  CertificateFile ~/.ssh/id_rsa.cs350.pub
-  AddKeysToAgent yes
-
-Host atria
-  HostName atria.cs.odu.edu
-  User sabbey
-  IdentityFile ~/.ssh/id_rsa_personal
-  CertificateFile ~/.ssh/id_rsa_personal.pub
-
-Host sirius
-  HostName sirius.cs.odu.edu
-  User sabbey
-  IdentityFile ~/.ssh/id_rsa_personal
-  CertificateFile ~/.ssh/id_rsa_personal.pub
-
-Host odu
-  HostName linux.cs.odu.edu
-  User sabbey
-  IdentityFile ~/.ssh/id_rsa_personal
-  CertificateFile ~/.ssh/id_rsa_personal.pub
-
-Host hestia
-  HostName hestia.wangfu.org
-  User scott
-  IdentityFile ~/.ssh/id_rsa_personal
-  CertificateFile ~/.ssh/id_rsa_personal.pub
-
-Host hestia.wangfu.org
-  HostName hestia.wangfu.org
-  User scott
-  IdentityFile ~/.ssh/id_rsa_personal
-  CertificateFile ~/.ssh/id_rsa_personal.pub
-
 Host github.com
   HostName github.com
   IdentityFile ~/.ssh/id_rsa_personal
