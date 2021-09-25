@@ -1,10 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
 - clean: ["~"]
 
 - link:
-  ~/.gitconfig:
-  ~/.shell:
-  ~/.ssh/config:
-    path: ssh/config
-    create: true
-  ~/.zshenv:
-  ~/.zshrc:
+    ~/.gitconfig:
+    ~/.shell:
+    ~/.ssh/config:
+      path: ssh/config
+      create: true
+    ~/.zsh:
+    ~/.zshenv:
+    ~/.zshrc:
+
+- shell:
+    - git submodule sync --recursive
+    - git update-submodules
