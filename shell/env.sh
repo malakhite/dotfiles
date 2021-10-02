@@ -1,0 +1,1 @@
+export EDITOR=$HOME/.local/bin/nvim

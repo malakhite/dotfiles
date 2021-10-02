@@ -14,6 +14,9 @@ fi
 # External plugins (initialized before)
 source ~/.zsh/plugins_before.zsh
 
+# Environment
+source ~/.shell/env.sh
+
 # Bootstrap
 source ~/.shell/bootstrap.sh
 
