@@ -6,15 +6,10 @@
 - clean: ["~"]
 
 - link:
-    ~/.config/nvim:
-      path: nvim/config
-      create: true
+    ~/.config/nvim: nvim/config
     ~/.fzf:
     ~/.gitconfig:
     ~/.shell:
-    ~/.ssh/config:
-      path: ssh/config
-      create: true
     ~/.zsh:
     ~/.zshrc:
 
