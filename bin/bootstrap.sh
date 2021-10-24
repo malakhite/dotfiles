@@ -21,7 +21,7 @@ if [ ! $? -eq 0 ]; then
 	if [ "$(uname)" == "Darwin" ]; then
 		brew install fd
 	elif [ "$(uname)" == "Linux" ]; then
-		sudo apt install -y fd
+		sudo apt install -y fd-find
 	fi
 fi
 
