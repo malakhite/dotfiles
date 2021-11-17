@@ -30,4 +30,4 @@ if [[ "$(tput colors)" == "256" ]]; then
     ZSH_HIGHLIGHT_STYLES[assign]=fg=037
 fi
 
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
