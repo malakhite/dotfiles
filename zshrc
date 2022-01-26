@@ -40,3 +40,5 @@ fi
 if [ -f ~/.shell_private ]; then
     source ~/.shell_private
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
