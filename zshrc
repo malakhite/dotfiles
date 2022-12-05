@@ -7,8 +7,8 @@ if [ -f ~/.shell_local_before ]; then
 fi
 
 # Allow local customizations in the ~/.zshrc_local_before file
-if [ -f ~/.zshrc_local_before ]; then
-    source ~/.zshrc_local_before
+if [ -f ~/.zsh_local_before.zsh ]; then
+    source ~/.zsh_local_before.zsh
 fi
 
 # External plugins (initialized before)
@@ -32,8 +32,8 @@ if [ -f ~/.shell_local_after ]; then
 fi
 
 # Allow local customizations in the ~/.zshrc_local_after file
-if [ -f ~/.zshrc_local_after ]; then
-    source ~/.zshrc_local_after
+if [ -f ~/.zsh_local_after.zsh ]; then
+    source ~/.zsh_local_after.zsh
 fi
 
 # Allow private customizations (not checked in to version control)

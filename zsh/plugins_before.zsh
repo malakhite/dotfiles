@@ -20,6 +20,8 @@ source "$HOME/.fzf/shell/key-bindings.zsh"
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
+zmodload zsh/complist
+
 autoload -Uz compinit && compinit
 
 bindkey  "^[[H"   beginning-of-line
