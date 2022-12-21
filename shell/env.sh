@@ -7,6 +7,9 @@ export HISTSIZE=10000
 export SAVEHIST=100000
 export HISTFILE="$HOME/.zsh_history"
 
+# Allow mouse scrolling in less
+export LESS=--mouse
+
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
