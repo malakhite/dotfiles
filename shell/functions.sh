@@ -28,3 +28,14 @@ there="$HOME/.shell.here"
 there() {
     cd "$(readlink "${there}")"
 }
+
+# Change the title fo the current window or tab
+title() {
+    echo -ne "\033]0;$*\007"
+}
+
+# Revert the window title after ssh exits
+ssh() {
+    /usr/bin/ssh "$@"
+    title $USER@$HOST
+}
