@@ -1,19 +1,17 @@
 - defaults:
-      link:
-          create: true
-          relink: true
+    link:
+      create: true
+      relink: true
 
 - clean: ["~"]
 
 - link:
-      ~/.config/nvim: nvim/config
-      ~/.fzf:
-      ~/.gitconfig:
-      ~/.shell:
-      ~/.zsh:
-      ~/.zshrc:
+    ~/.zshrc: zsh/zshrc
+    ~/.zshenv: zsh/zshenv
+    ~/.zprofile: zsh/zprofile
+    ~/.config/nvim: nvim/config
+    ~/.gitconfig:
+    ~/.zsh:
 
 - shell:
-      - git submodule sync --recursive
-      - git update-submodules
-      - [./fzf/install, Installing fzf]
+  - [git submodule update --init --recursive, Installing submodules]
