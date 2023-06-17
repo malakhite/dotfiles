@@ -12,6 +12,7 @@
     ~/.config/nvim: nvim/config
     ~/.gitconfig:
     ~/.zsh:
+    ~/.config/starship.toml: starship/starship.toml
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
