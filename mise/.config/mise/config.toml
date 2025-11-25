@@ -1,0 +1,10 @@
+[tools]
+node = '22'
+java = "24"
+python = '3.13'
+
+[settings]
+experimental = true
+
+[hooks]
+postinstall = 'npx corepack enable'
