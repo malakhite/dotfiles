@@ -13,4 +13,9 @@ path=(
 # remove empty components to avoid '::' ending up + resulting in './' being in $PATH
 path=( "${path[@]:#}" )
 
+if type brew &> /dev/null
+then
+    eval "$(brew shellenv)"
+fi
+
 eval "$(mise activate zsh)"
