@@ -11,7 +11,7 @@
 # $character
 # """
 format = """
-$os ($hostname )$directory $git_branch
+$os ($hostname )$directory $git_branch$git_status$git_state
 $character"""
 
 add_newline = true
