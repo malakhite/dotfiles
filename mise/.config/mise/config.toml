@@ -1,7 +1,8 @@
 [tools]
-node = '22'
+node = "lts"
 java = "24"
 python = '3.13'
+pnpm = "latest"
 
 [settings]
 experimental = true

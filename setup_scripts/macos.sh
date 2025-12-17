@@ -65,7 +65,10 @@ done
 
 defaults write com.apple.screencapture location -string "$HOME/Pictures/Screenshots" # Set screencapture location
 defaults write com.apple.dock autohide -boolean true # Hide the dock
+defaults write com.apple.dock mru-spaces -boolean false # Don't rearrange workspaces
+defaults write com.apple.dock show-recents -boolean false # Don't show recent apps in Dock 
 defaults write com.apple.finder "AppleShowAllFiles" -boolean true # Show hidden files in Finder
+defaults write NSGlobalDomain "AppleShowAllExtensions" -boolean true # Show file extensions in Finder
 
 killall Dock
 killall Finder
