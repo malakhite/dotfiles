@@ -3,6 +3,8 @@ node = "lts"
 java = "24"
 python = '3.13'
 pnpm = "latest"
+go = "latest"
+terraform = "1.14.7"
 
 [settings]
 experimental = true

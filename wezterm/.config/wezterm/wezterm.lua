@@ -32,6 +32,16 @@ if is_darwin then
       mods = 'OPT',
       action = act.SendKey { key = 'f', mods = 'ALT' },
     },
+    {
+      key = 'Home',
+      mods = '',
+      action = act.SendString '\001',
+    },
+    {
+      key = 'End',
+      mods = '',
+      action = act.SendString '\005',
+    },
   }
 end
 
