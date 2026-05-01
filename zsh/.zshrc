@@ -17,6 +17,7 @@ esac
 
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
 
+export GPG_TTY=$tty
 autoload -Uz compinit
 compinit
 
