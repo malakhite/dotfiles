@@ -3,3 +3,5 @@ font-family = "Symbols Nerd Font Mono"
 
 theme = "Gruvbox Dark Hard"
 
+confirm-close-surface = false
+
