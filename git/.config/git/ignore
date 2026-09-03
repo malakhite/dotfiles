@@ -1,3 +1,5 @@
 .mise.local.toml
 .env
 
+
+**/.claude/settings.local.json

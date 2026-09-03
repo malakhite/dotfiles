@@ -12,6 +12,8 @@ if ls --version |& grep -q 'GNU' >/dev/null 2>&1 && ls -v / >/dev/null 2>&1; the
 	ls_options+=( -v )
 fi
 
+ls_options+=( -v )
+
 # do we have GNU ls with color-support?
 if [[ "$TERM" != dumb ]]; then
 	#a1# List files with colors (\kbd{ls \ldots})

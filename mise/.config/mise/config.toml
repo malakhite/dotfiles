@@ -2,7 +2,7 @@
 node = "lts"
 java = "24"
 python = '3.13'
-pnpm = "latest"
+pnpm = "11.22.0"
 go = "latest"
 terraform = "1.14.7"
 
@@ -13,4 +13,4 @@ experimental = true
 package_manager = "pnpm"
 
 [hooks]
-postinstall = 'npx corepack enable'
+
