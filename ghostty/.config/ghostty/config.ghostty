@@ -1,11 +1,10 @@
-font-family = "JetBrains Mono"
+font-family = "JetBrains Mono NL"
 font-family = "Symbols Nerd Font Mono"
 
-theme = "Gruvbox Dark Hard"
+theme = "Catppuccin Mocha"
 
 confirm-close-surface = false
 
 shell-integration-features = ssh-env
 quit-after-last-window-closed = true
 quit-after-last-window-closed-delay = 1m
-

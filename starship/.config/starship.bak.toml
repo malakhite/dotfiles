@@ -1,0 +1,244 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Pipes ╰─ ╭─
+# Powerline symbols                                     
+# Wedges 🭧🭒 🭣🭧🭓
+# Random noise 🬖🬥🬔🬗
+# Cool stuff 󰜥   
+
+# format = """
+# $cmd_duration$username$hostname $directory $git_branch
+# $character
+# """
+format = """
+$os ($hostname )$directory $git_branch$git_status$git_state
+$character"""
+
+palette = "catppuccin_mocha"
+
+add_newline = true
+
+[aws]
+symbol = " "
+
+[azure]
+symbol = "󰠅 "
+
+[buf]
+symbol = " "
+
+[bun]
+symbol = " "
+
+[c]
+symbol = " "
+
+[character]
+success_symbol = "[  ](fg:blue)"
+error_symbol = "[  ](fg:red)"
+
+[cmake]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[cpp]
+symbol = " "
+
+[cmd_duration]
+min_time = 0
+format = '[](fg:yellow)[󰪢 $duration](bg:yellow fg:black)[](fg:yellow)'
+
+[directory]
+home_symbol = "  "
+read_only = "  "
+style = "bg:green fg:black"
+truncation_length = 6
+truncation_symbol = " ••/"
+format = '[](fg:green)[󰉋 $path]($style)[](fg:green)'
+
+[directory.substitutions]
+"Desktop" = "  "
+"Documents" = "  "
+"Downloads" = "  "
+"Music" = " 󰎈 "
+"Pictures" = "  "
+"Videos" = "  "
+"GitHub" = " 󰊤 "
+
+[docker_context]
+symbol = " "
+
+[gcloud]
+symbol = " "
+
+[git_branch]
+style = "bg: cyan"
+symbol = "󰘬"
+truncation_length = 12
+truncation_symbol = ""
+format = "󰜥 [](fg:cyan)[$symbol $branch(:$remote_branch)](fg:black bg:cyan)[ ](fg:cyan)"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = " "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](red)"
+
+[git_status]
+# conflicted = " 🏳 "
+# ahead = " 🏎💨 "
+# behind = " 😰 "
+# diverged = " 😵 "
+# untracked = " 🤷 ‍"
+# stashed = " 📦 "
+# modified = " 📝 "
+# staged = '[++\($count\)](green)'
+# renamed = " ✍️ "
+# deleted = " 🗑 "
+
+[gradle]
+symbol = " "
+
+[hostname]
+ssh_only = true
+ssh_symbol = " "
+# format =  "[•$hostname](bg:cyan fg:black)[](fg:cyan)"
+trim_at = ".companyname.com"
+disabled = false
+
+[java]
+symbol = " "
+
+[kotlin]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[meson]
+symbol = "󰔷 "
+
+[line_break]
+disabled = false
+
+[memory_usage]
+disabled = true
+threshold = -1
+symbol = "󰍛 "
+style = "bold dimmed green"
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os]
+disabled = false
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CachyOS = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+Nobara = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Void = " "
+Windows = "󰍲 "
+
+[package]
+disabled = true
+symbol = "󰏗 "
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[time]
+disabled = true
+format = '🕙[\[ $time \]]($style) '
+time_format = "%T"
+
+[username]
+style_user = "bg:cyan fg:black"
+style_root = "red bold"
+format = "[](fg:cyan)[$user]($style)"
+disabled = false
+show_always = true
